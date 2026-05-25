@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Rucha Patil | Luxury Portfolio</title>
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f5f0;
+    color:#1a1a1a;
+    overflow-x:hidden;
+    font-family:'Outfit',sans-serif;
+}
+
+/* Background */
+
+.bg-pattern{
+    position:fixed;
+    inset:0;
+    z-index:-10;
+    background:
+    radial-gradient(circle at top left,#d4af3720,transparent 25%),
+    radial-gradient(circle at bottom right,#00000010,transparent 25%);
+}
+
+/* Navbar */
+
+.navbar{
+    background:rgba(255,255,255,.7);
+    backdrop-filter:blur(20px);
+    border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+/* Gradient Text */
+
+.gold-text{
+    background:linear-gradient(to right,#c9a227,#f4d03f,#b8860b);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* Heading Font */
+
+h1,h2,h3{
+    font-family:'Cinzel',serif;
+}
+
+/* Card */
+
+.card{
+    background:white;
+    border:1px solid rgba(0,0,0,.08);
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+/* Button */
+
+.gold-btn{
+    background:linear-gradient(to right,#c9a227,#f4d03f);
+    color:black;
+    transition:.4s;
+}
+
+.gold-btn:hover{
+    transform:scale(1.05);
+}
+
+/* Image Glow */
+
+.image-box{
+    position:relative;
+}
+
+.image-box::before{
+    content:"";
+    position:absolute;
+    inset:-20px;
+    background:linear-gradient(to right,#d4af37,#f4d03f);
+    filter:blur(60px);
+    opacity:.35;
+    z-index:-1;
+}
+
+/* Floating Animation */
+
+.floating{
+    animation:float 5s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+/* Skills */
+
+.skill{
+    height:10px;
+    background:#e5e5e5;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.fill{
+    height:100%;
+    border-radius:20px;
+    background:linear-gradient(to right,#c9a227,#f4d03f);
+}
+
+/* Section */
+
+section{
+    padding:120px 30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Background -->
+<div class="bg-pattern"></div>
+
+<!-- Navbar -->
+<nav class="navbar fixed top-0 left-0 w-full z-50">
+
+<div class="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center">
+
+<h1 class="text-3xl font-bold gold-text">
+Rucha.
+</h1>
+
+<div class="hidden md:flex gap-10 text-lg">
+
+<a href="#home" class="hover:text-yellow-700 duration-300">Home</a>
+
+<a href="#about" class="hover:text-yellow-700 duration-300">About</a>
+
+<a href="#services" class="hover:text-yellow-700 duration-300">Services</a>
+
+<a href="#skills" class="hover:text-yellow-700 duration-300">Skills</a>
+
+<a href="#projects" class="hover:text-yellow-700 duration-300">Projects</a>
+
+<a href="#contact" class="hover:text-yellow-700 duration-300">Contact</a>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="min-h-screen flex items-center">
+
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+
+<!-- Left -->
+<div>
+
+<p class="uppercase tracking-[8px] text-yellow-700 mb-6">
+Luxury Frontend Developer
+</p>
+
+<h1 class="text-6xl md:text-7xl font-bold leading-tight">
+
+Rucha Patil <br>
+
+<span class="gold-text">
+Portfolio
+</span>
+
+</h1>
+
+<p class="text-gray-600 text-xl leading-10 mt-10 max-w-xl">
+
+Computer Diploma Student with a strong interest in Data Science, AI/ML and Web Development.
+
+</p>
+
+<div class="flex gap-6 mt-12">
+
+<button class="gold-btn px-10 py-5 rounded-full font-semibold">
+Explore Work
+</button>
+
+<button class="border border-black/10 px-10 py-5 rounded-full hover:bg-black hover:text-white duration-300">
+Contact Me
+</button>
+
+</div>
+
+<!-- Social -->
+<div class="flex gap-6 mt-12 text-3xl">
+
+<i class="fab fa-github hover:text-yellow-700 duration-300 cursor-pointer"></i>
+
+<i class="fab fa-linkedin hover:text-yellow-700 duration-300 cursor-pointer"></i>
+
+<i class="fab fa-instagram hover:text-yellow-700 duration-300 cursor-pointer"></i>
+
+</div>
+
+</div>
+
+<!-- Right -->
+<div class="flex justify-center">
+
+<div class="image-box floating">
+
+<img
+src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8dy_ySHw3Fex6DR6orszsMHvZ5wN0xank0w&s"
+class="w-[400px] h-[550px] object-cover rounded-[40px]"
+>
+
+<!-- Floating Card -->
+<div class="absolute -left-10 top-10 card rounded-3xl p-6">
+
+<h2 class="text-3xl font-bold gold-text">
+UI/UX
+</h2>
+
+<p class="text-gray-500">
+Premium Design
+</p>
+
+</div>
+
+<!-- Floating Card -->
+<div class="absolute -right-10 bottom-10 card rounded-3xl p-6">
+
+<h2 class="text-3xl font-bold gold-text">
+20+
+</h2>
+
+<p class="text-gray-500">
+Projects
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- About -->
+<section id="about">
+
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+
+<div>
+
+<h2 class="text-5xl font-bold leading-tight">
+
+About
+<span class="gold-text">
+Me
+</span>
+
+</h2>
+
+</div>
+
+<div class="card rounded-[40px] p-10">
+
+<p class="text-gray-600 text-xl leading-[45px]">
+
+Computer Diploma Student passionate about Web Development,
+AI/ML, Data Science and building modern responsive applications.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Services -->
+<section id="services">
+
+<div class="max-w-7xl mx-auto">
+
+<h2 class="text-5xl font-bold text-center mb-20">
+
+My
+<span class="gold-text">
+Services
+</span>
+
+</h2>
+
+<div class="grid md:grid-cols-3 gap-10">
+
+<!-- Card -->
+<div class="card rounded-[40px] p-10">
+
+<i class="fas fa-code text-5xl text-yellow-700 mb-8"></i>
+
+<h3 class="text-3xl font-bold mb-5">
+Web Development
+</h3>
+
+<p class="text-gray-600 leading-9">
+Modern responsive websites with elegant interfaces.
+</p>
+
+</div>
+
+<!-- Card -->
+<div class="card rounded-[40px] p-10">
+
+<i class="fas fa-palette text-5xl text-yellow-700 mb-8"></i>
+
+<h3 class="text-3xl font-bold mb-5">
+Luxury UI Design
+</h3>
+
+<p class="text-gray-600 leading-9">
+Premium interfaces with modern visual experiences.
+</p>
+
+</div>
+
+<!-- Card -->
+<div class="card rounded-[40px] p-10">
+
+<i class="fas fa-mobile-screen text-5xl text-yellow-700 mb-8"></i>
+
+<h3 class="text-3xl font-bold mb-5">
+Responsive Design
+</h3>
+
+<p class="text-gray-600 leading-9">
+Mobile friendly smooth website experiences.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Skills -->
+<section id="skills">
+
+<div class="max-w-5xl mx-auto">
+
+<h2 class="text-5xl font-bold text-center mb-20">
+
+My
+<span class="gold-text">
+Skills
+</span>
+
+</h2>
+
+<div class="space-y-8">
+
+<!-- Skill -->
+<div>
+
+<div class="flex justify-between mb-3">
+
+<span class="text-xl font-medium">
+HTML
+</span>
+
+<span>
+95%
+</span>
+
+</div>
+
+<div class="skill">
+<div class="fill w-[95%]"></div>
+</div>
+
+</div>
+
+<!-- Skill -->
+<div>
+
+<div class="flex justify-between mb-3">
+
+<span class="text-xl font-medium">
+CSS / Tailwind
+</span>
+
+<span>
+90%
+</span>
+
+</div>
+
+<div class="skill">
+<div class="fill w-[90%]"></div>
+</div>
+
+</div>
+
+<!-- Skill -->
+<div>
+
+<div class="flex justify-between mb-3">
+
+<span class="text-xl font-medium">
+JavaScript
+</span>
+
+<span>
+85%
+</span>
+
+</div>
+
+<div class="skill">
+<div class="fill w-[85%]"></div>
+</div>
+
+</div>
+
+<!-- Skill -->
+<div>
+
+<div class="flex justify-between mb-3">
+
+<span class="text-xl font-medium">
+C / C++
+</span>
+
+<span>
+85%
+</span>
+
+</div>
+
+<div class="skill">
+<div class="fill w-[85%]"></div>
+</div>
+
+</div>
+
+<!-- Skill -->
+<div>
+
+<div class="flex justify-between mb-3">
+
+<span class="text-xl font-medium">
+Python
+</span>
+
+<span>
+80%
+</span>
+
+</div>
+
+<div class="skill">
+<div class="fill w-[80%]"></div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Projects -->
+<section id="projects">
+
+<div class="max-w-7xl mx-auto">
+
+<h2 class="text-5xl font-bold text-center mb-20">
+
+Featured
+<span class="gold-text">
+Projects
+</span>
+
+</h2>
+
+<div class="grid md:grid-cols-3 gap-10">
+
+<!-- Project -->
+<div class="card rounded-[40px] overflow-hidden">
+
+<img
+src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800"
+class="h-60 w-full object-cover"
+>
+
+<div class="p-8">
+
+<h3 class="text-3xl font-bold mb-4">
+Portfolio UI
+</h3>
+
+<p class="text-gray-600 leading-8">
+Elegant portfolio website with luxury animations.
+</p>
+
+<button class="mt-8 gold-text text-xl">
+View Project →
+</button>
+
+</div>
+
+</div>
+
+<!-- Project -->
+<div class="card rounded-[40px] overflow-hidden">
+
+<img
+src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=800"
+class="h-60 w-full object-cover"
+>
+
+<div class="p-8">
+
+<h3 class="text-3xl font-bold mb-4">
+Weather App
+</h3>
+
+<p class="text-gray-600 leading-8">
+Modern weather app with elegant responsive UI.
+</p>
+
+<button class="mt-8 gold-text text-xl">
+View Project →
+</button>
+
+</div>
+
+</div>
+
+<!-- Project -->
+<div class="card rounded-[40px] overflow-hidden">
+
+<img
+src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800"
+class="h-60 w-full object-cover"
+>
+
+<div class="p-8">
+
+<h3 class="text-3xl font-bold mb-4">
+Dashboard
+</h3>
+
+<p class="text-gray-600 leading-8">
+Luxury dashboard interface with clean aesthetics.
+</p>
+
+<button class="mt-8 gold-text text-xl">
+View Project →
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+<section id="contact">
+
+<div class="max-w-5xl mx-auto">
+
+<div class="card rounded-[50px] p-12">
+
+<h2 class="text-5xl font-bold text-center mb-12">
+
+Let's Create
+<span class="gold-text">
+Luxury
+</span>
+
+Together
+
+</h2>
+
+<div class="grid md:grid-cols-2 gap-6">
+
+<input
+type="text"
+placeholder="Your Name"
+class="bg-[#f3f3f3] p-5 rounded-2xl outline-none border border-black/10"
+>
+
+<input
+type="email"
+placeholder="Your Email"
+class="bg-[#f3f3f3] p-5 rounded-2xl outline-none border border-black/10"
+>
+
+</div>
+
+<textarea
+rows="5"
+placeholder="Your Message"
+class="w-full mt-6 bg-[#f3f3f3] p-5 rounded-2xl outline-none border border-black/10"></textarea>
+
+<button
+class="mt-8 w-full py-5 rounded-2xl gold-btn text-xl font-bold">
+
+Send Message
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+<footer class="relative mt-20 overflow-hidden">
+
+<!-- Top Gradient -->
+<div class="h-2 bg-gradient-to-r from-yellow-600 via-yellow-400 to-yellow-600"></div>
+
+<!-- Footer Background -->
+<div class="bg-[#120d12] py-20 px-8">
+
+<div class="max-w-7xl mx-auto">
+
+<div class="flex flex-col lg:flex-row justify-between items-center gap-10">
+
+<!-- Left -->
+<div class="flex items-center gap-5">
+
+<div class="w-16 h-16 rounded-full bg-gradient-to-r from-yellow-600 to-yellow-400 flex items-center justify-center text-2xl font-bold text-black">
+RP
+</div>
+
+<div>
+
+<h2 class="text-3xl font-bold text-white">
+Rucha Patil
+</h2>
+
+<p class="text-[#c7baba] text-lg mt-1">
+Frontend Developer • AI/ML Enthusiast
+</p>
+
+</div>
+
+</div>
+
+<!-- Center -->
+<div class="flex flex-wrap justify-center gap-10 text-[#c7baba] text-xl">
+
+<a href="#home" class="hover:text-yellow-400 duration-300">
+Home
+</a>
+
+<a href="#about" class="hover:text-yellow-400 duration-300">
+About
+</a>
+
+<a href="#skills" class="hover:text-yellow-400 duration-300">
+Skills
+</a>
+
+<a href="#projects" class="hover:text-yellow-400 duration-300">
+Projects
+</a>
+
+<a href="#contact" class="hover:text-yellow-400 duration-300">
+Contact
+</a>
+
+</div>
+
+<!-- Social -->
+<div class="flex gap-8 text-3xl text-[#c7baba]">
+
+<a href="#">
+<i class="fab fa-github hover:text-white duration-300"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-linkedin hover:text-white duration-300"></i>
+</a>
+
+<a href="#">
+<i class="far fa-envelope hover:text-white duration-300"></i>
+</a>
+
+</div>
+
+</div>
+
+<!-- Bottom -->
+<div class="text-center mt-16 text-[#8b7373] text-lg">
+
+© 2026 Rucha Patil. All rights reserved.
+
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>
